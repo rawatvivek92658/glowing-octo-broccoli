@@ -1,0 +1,27 @@
+.navbar{
+    background-color: #111;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navList{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.navLink{
+    text-decoration: none;
+    color: rgba(182, 80, 255, 0.784);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navLink:hover{
+    color: rgba(135, 222, 195, 0.748);
+}

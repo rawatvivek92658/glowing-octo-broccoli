@@ -1,0 +1,131 @@
+.home {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    color: bisque;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/* Remove old fade-in styles to avoid conflicts with Animate.css */
+/* .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    will-change: opacity, transform;
+}
+.is-visible {
+    opacity: 1;
+    transform: none;
+} */
+
+/* Optional: helper class to trigger Animate.css animations */
+.animate__animated {
+  /* Animate.css already sets animation-fill-mode: both */
+}
+
+/* Keep your letter-by-letter typing effect */
+.avatar {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    transition: transform 0.3s ease;
+}
+.avatar:hover {
+    transform: scale(1.05);
+}
+
+.heading {
+    font-family: monospace;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.12em;
+    margin-bottom: 0.3em;
+}
+
+.animatedLetter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.visible {
+    animation: typeIn 0.4s forwards;
+}
+
+@keyframes typeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.cursor {
+    display: inline-block;
+    margin-left: 2px;
+    color: white;
+    animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.tagline {
+    font-style: italic;
+    color: rgba(135, 222, 195, 0.8);
+    font-size: 1.4rem;
+    max-width: 600px;
+    margin: 0 auto 1.5rem auto;
+    line-height: 1.5;
+    transition: color 0.3s ease;
+}
+
+.tagline:hover {
+    color: aqua;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    color: rgba(252, 255, 240);
+    background-color: rgba(137, 43, 226, 0.512);
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.resume-btn:hover {
+    background-color: rgba(95, 158, 160, 0.673);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.05);
+        opacity: 0.7;
+    }
+}
